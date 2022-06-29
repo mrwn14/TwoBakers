@@ -1,10 +1,13 @@
 import React, {useState} from 'react'
 import bread from "../assets/bread.png"
+import {useNavigate} from 'react-router-dom'
 
 function Navbar() {
     const [expand, setExpand] = useState(false); 
+    const navigate = useNavigate();
+
     return (
-        <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-navPrimary mb-3">
+        <nav className="w-screen z-10 flex flex-wrap items-center justify-between px-2 py-3 bg-navPrimary fixed">
             <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                 <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">                   
                     <a className="text-sm flex font-bold leading-relaxed mr-4 py-2 whitespace-nowrap uppercase text-white" href="#">
@@ -24,14 +27,14 @@ function Navbar() {
                 <div className={"lg:flex flex-grow items-center" + (expand ? " flex" : " hidden")}>
                     <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                         <li className="nav-item justify-center">
-                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50" href="#">
+                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50" onClick={() => navigate("/")}>
                                 <span className="ml-2">HOME</span>
                             </a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50" href="#">
-                                <span className="ml-2">PRODUCTS</span>
+                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50" onClick={() => navigate("/Recipes")}>
+                                <span className="ml-2">RECIPES</span>
                             </a>
                         </li>
 

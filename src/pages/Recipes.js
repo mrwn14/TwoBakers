@@ -1,10 +1,8 @@
 import React from 'react'
 import bigBg from "../assets/image2.jpg"
-import { useNavigate } from "react-router-dom";
 
-function Home() {
-    const navigate = useNavigate();
 
+function Recipes() {
   return (
     <div className='text-black h-screen relative overflow-hidden'>
         <div className='bg-cover h-screen overflow-hidden'>
@@ -16,13 +14,11 @@ function Home() {
                     Enjoy our baked goodies from anywhere <br/>and your tongue will thank us soon.
                 </p>
             </div>
-            <button onClick={() => navigate("/Recipes")} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 mt-5 px-4 rounded-full">
-                EXPLORE
-            </button>
+            
                 
         </div>
     </div>
   )
 }
 
-export default Home
+export default Recipes
