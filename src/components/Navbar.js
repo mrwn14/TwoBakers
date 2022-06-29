@@ -27,25 +27,25 @@ function Navbar() {
                 <div className={"lg:flex flex-grow items-center" + (expand ? " flex" : " hidden")}>
                     <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                         <li className="nav-item justify-center">
-                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50" onClick={() => navigate("/")}>
+                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50 cursor-pointer" onClick={() => navigate("/")}>
                                 <span className="ml-2">HOME</span>
                             </a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50" onClick={() => navigate("/Recipes")}>
+                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50 cursor-pointer" onClick={() => navigate("/Recipes")}>
                                 <span className="ml-2">RECIPES</span>
                             </a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50" href="#">
+                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50 cursor-pointer" onClick={() => navigate("/About")}>
                                 <span className="ml-2">ABOUT</span>
                             </a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50" href="#">
+                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50 cursor-pointer" onClick={() => navigate("/Contact")}>
                                 <span className="ml-2">CONTACT</span>
                             </a>
                         </li>
