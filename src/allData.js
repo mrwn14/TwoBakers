@@ -12,48 +12,55 @@ export default [
         image: buns,
         title: 'SWEET BUNS',
         category: 'breads',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ea, ab aperiam necessitatibus adipisci sunt facilis itaque non enim est!'
+        description: 'Everyone has tasted buns in their life, but I assure you, you have never tasted these buns. After a single bite, you will be begging for more.',
+        link: 'https://www.youtube.com/watch?v=gTGSUYMu6Ns&ab_channel=JoshuaWeissman'
     },
     {
         id:2,
         image: bagels,
         title: 'GLAZED BAGELS',
         category: 'breads',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ea, ab aperiam necessitatibus adipisci sunt facilis itaque non enim est!'
+        description: "Who doesn't love bagels? We offer a variety of glazed bagels that you can make on your own.",
+        link: 'https://www.youtube.com/watch?v=W8j-ZUp7KD0&ab_channel=JoshuaWeissman'
     },
     {
         id:3,
         image: cheesecake,
         title: 'CHEESCAKE',
         category: 'dessert',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ea, ab aperiam necessitatibus adipisci sunt facilis itaque non enim est!'
+        description: 'Remember the first time you tasted a cheesecake? Well tasting this one will give you the same feeling as that day.',
+        link: 'https://www.youtube.com/watch?v=ZYoYffXWiwk&ab_channel=PreppyKitchen'
     },
     {
         id:4,
         image: pie,
         title: ' APPLE PIE',
         category: 'dessert',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ea, ab aperiam necessitatibus adipisci sunt facilis itaque non enim est!'
+        description: 'For anyone who cannot get enough of pies, this apple pie is easy to make, and pretty healthy for a pie this good.',
+        link: "https://www.youtube.com/watch?v=KbyahTnzbKA&ab_channel=NatashasKitchen"
     },
     {
         id:5,
         image: chocolate,
         title: 'CHOCOLATE CAKE',
         category: 'dessert',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ea, ab aperiam necessitatibus adipisci sunt facilis itaque non enim est!'
+        description: 'For your cheat days, this chocolate delicacy will leave you waiting for the next cheat day.',
+        link: "https://www.youtube.com/watch?v=dsJtgmAhFF4&ab_channel=TheStayAtHomeChef"
     },
     {
         id:6,
         image: bread,
         title: 'WHOLE WHEAT BREAD',
         category: 'breads',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ea, ab aperiam necessitatibus adipisci sunt facilis itaque non enim est!'
+        description: 'Nothing super fancy, just some bread that you can toats in the morning for your breakfast, but definitely better than anything you get at a supermarket.',
+        link: "https://www.youtube.com/watch?v=nEEd8RsjujA&ab_channel=DeepSouthTexas"
     },
     {
         id:7,
         image: pizza,
         title: 'VEGETARIAN PIZZA',
         category: 'pizza',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ea, ab aperiam necessitatibus adipisci sunt facilis itaque non enim est!'
+        description: 'If you want to eat pizza for the rest of your life, get this one.',
+        link: 'https://www.youtube.com/watch?v=TBrz3chSss0&ab_channel=YummyTreats'
     }
 ];

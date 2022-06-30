@@ -1,10 +1,12 @@
 import React from "react";
 import me from "../assets/thatme.png";
 import bread from "../assets/bread.png";
+import Chatbot from '../components/Chatbot'
 
 function About() {
   return (
     <div id="top" className="relative grid h-full md:flex">
+      <Chatbot/>
       {/* right side of the website */}
       <div className="grid-cols-1 mx-auto md:flex-[3_3_0%]">
         <img className="md:w-[75%] w-[90%] mx-auto mb-10 mt-5 drop-shadow-xl" src={me} />
@@ -61,6 +63,7 @@ function About() {
 
       {/* right side of the website  */}
       <div className="relative flex-1 md:bg-gray-200 pb-40">
+        
         <div className="w-2/3 translate-y-10 mx-auto">
           <div className="hidden md:block">
             <a

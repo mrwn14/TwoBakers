@@ -1,12 +1,14 @@
-import React from 'react'
-import bigBg from "../assets/image2.jpg"
+import React from 'react';
+import bigBg from "../assets/image2.jpg";
 import { useNavigate } from "react-router-dom";
+import Chatbot from '../components/Chatbot'
 
 function Home() {
     const navigate = useNavigate();
 
   return (
     <div className='text-black h-screen relative overflow-hidden'>
+        <Chatbot />
         <div className='bg-cover h-screen overflow-hidden'>
             <img className='bg-cover max-w-none md:w-screen h-screen' src={bigBg} />
         </div> 
@@ -21,6 +23,7 @@ function Home() {
             </button>
                 
         </div>
+        
     </div>
   )
 }

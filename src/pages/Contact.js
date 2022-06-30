@@ -1,10 +1,13 @@
 import React from "react";
 import {useNavigate} from 'react-router-dom'
+import Chatbot from '../components/Chatbot'
+
 
 function Contact() {
   const navigate = useNavigate();
   return (
     <div>
+      <Chatbot />
       <section className="text-gray-700 body-font relative">
         <div className="container px-5 py-12 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
