@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/TwoBakers/static/css/main.d9d1adf8.css",
+    "main.js": "/TwoBakers/static/js/main.f0ef40cb.js",
+    "static/media/thatme.png": "/TwoBakers/static/media/thatme.e432d13816043ea71522.png",
+    "static/media/image2.jpg": "/TwoBakers/static/media/image2.bdf2ea7b82a2bc8859ce.jpg",
+    "static/media/chocolate.jpg": "/TwoBakers/static/media/chocolate.1154055ebd31fa8ae92b.jpg",
+    "static/media/pizza.jpg": "/TwoBakers/static/media/pizza.7f939e729ffdc3ce5314.jpg",
+    "static/media/applepie.jpg": "/TwoBakers/static/media/applepie.a2e2408f61510d3b7d77.jpg",
+    "static/media/bagels.jpg": "/TwoBakers/static/media/bagels.f56f1d6622ba556494d5.jpg",
+    "static/media/bread.jpg": "/TwoBakers/static/media/bread.7a720b68d8b816819497.jpg",
+    "static/media/buns.jpg": "/TwoBakers/static/media/buns.71254d19a68ac681c95a.jpg",
+    "static/media/cheesecake.jpg": "/TwoBakers/static/media/cheesecake.6a861c6e5e8a8e77ed91.jpg",
+    "index.html": "/TwoBakers/index.html",
+    "main.d9d1adf8.css.map": "/TwoBakers/static/css/main.d9d1adf8.css.map",
+    "main.f0ef40cb.js.map": "/TwoBakers/static/js/main.f0ef40cb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9d1adf8.css",
+    "static/js/main.f0ef40cb.js"
+  ]
+}
