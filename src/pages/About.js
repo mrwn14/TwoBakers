@@ -77,12 +77,12 @@ function About() {
           <p className="w-full h-px my-5 bg-gray-700"></p>
           <h1 className=" text-center text-2xl">Quick Links</h1>
           <p className="w-full h-px my-5 bg-gray-700 mb-10"></p>
-          <a onClick={(e) => {e.preventDefault(); window.location.replace('/TwoBakers/About/#History');}} className="text-red-500 font-semibold mt-10 mb-5 cursor-pointer">
+          <a href="#History" className="text-red-500 font-semibold mt-10 mb-5 cursor-pointer">
             Our history
           </a>
           <br />
           <div className="my-6"></div>
-          <a  onClick={(e) => {e.preventDefault(); window.location.replace('/TwoBakers/About/#Beginning');}} className="text-red-500 font-semibold my-10 cursor-pointer">
+          <a  href="#Beginning" className="text-red-500 font-semibold my-10 cursor-pointer">
             The Beginning of Two Bakers Bakery
           </a>
         </div>

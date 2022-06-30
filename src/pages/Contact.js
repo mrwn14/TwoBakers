@@ -1,5 +1,5 @@
 import React from "react";
-import {useNavigate} from 'react-router-dom'
+import {useNavigate, Link} from 'react-router-dom'
 import Chatbot from '../components/Chatbot'
 
 
@@ -94,11 +94,21 @@ function Contact() {
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button 
-                className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-                onClick={() => navigate("/TwoBakers/")}>
-                  Button
-                </button>
+                {/* <Link
+                to={"/TwoBakers/"}
+                >
+                  <button onClick={alert("Thank you for your feedback!")} className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+
+                  </button>
+                </Link> */}
+                <Link to="/TwoBakers/" className="self-end" onClick={()=> {alert('Thank you for your feedback!')}}>
+                        <button
+                            type="submit"
+                            className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                        >
+                            Submit
+                        </button>
+                    </Link>
               </div>
             </div>
           </div>
