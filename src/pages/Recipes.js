@@ -20,7 +20,7 @@ function Recipes() {
         setMenuItem(filteredData);
   }
     return (
-        <div>
+        <div className="pb-16">
             <Button button={buttons} filter={filter}/>
             <Card menuItem={menuItem}/>
         </div>
