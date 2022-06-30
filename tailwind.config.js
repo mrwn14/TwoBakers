@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       colors : {
         navPrimary : "#FFD0D0",
+        bgColor : "#19202E",
+        btnColor : "#0C3564",
+        btnHover : "#037FFf",
       }
     },
   },

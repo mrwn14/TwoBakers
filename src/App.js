@@ -12,10 +12,10 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Recipes" element={<Recipes />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Contact" element={<Contact />} />
+        <Route path="/TwoBakers/" element={<Home />} />
+        <Route path="/TwoBakers/Recipes" element={<Recipes />} />
+        <Route path="/TwoBakers/About" element={<About />} />
+        <Route path="/TwoBakers/Contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
@@ -23,3 +23,4 @@ function App() {
 }
 
 export default App
+

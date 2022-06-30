@@ -7,7 +7,7 @@ function Navbar() {
     const navigate = useNavigate();
 
     return (
-        <nav className="w-screen z-10 flex flex-wrap items-center justify-between px-2 py-3 bg-navPrimary fixed">
+        <nav className="w-screen z-10 flex flex-wrap items-center justify-between px-2 py-3 bg-navPrimary fixed  z-50">
             <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                 <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">                   
                     <a className="text-sm flex font-bold leading-relaxed mr-4 py-2 whitespace-nowrap uppercase text-white" href="#">
@@ -27,25 +27,25 @@ function Navbar() {
                 <div className={"lg:flex flex-grow items-center" + (expand ? " flex" : " hidden")}>
                     <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                         <li className="nav-item justify-center">
-                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50 cursor-pointer" onClick={() => navigate("/")}>
+                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50 cursor-pointer" onClick={() => navigate("/TwoBakers")}>
                                 <span className="ml-2">HOME</span>
                             </a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50 cursor-pointer" onClick={() => navigate("/Recipes")}>
+                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50 cursor-pointer" onClick={() => navigate("/TwoBakers/Recipes")}>
                                 <span className="ml-2">RECIPES</span>
                             </a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50 cursor-pointer" onClick={() => navigate("/About")}>
+                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50 cursor-pointer" onClick={() => navigate("/TwoBakers/About")}>
                                 <span className="ml-2">ABOUT</span>
                             </a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50 cursor-pointer" onClick={() => navigate("/Contact")}>
+                            <a className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50 cursor-pointer" onClick={() => navigate("/TwoBakers/Contact")}>
                                 <span className="ml-2">CONTACT</span>
                             </a>
                         </li>
