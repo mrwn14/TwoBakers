@@ -10,6 +10,11 @@ module.exports = {
         bgColor : "#19202E",
         btnColor : "#0C3564",
         btnHover : "#037FFf",
+      },
+
+      height : {
+        card : "27rem",
+        mcard : "30rem",
       }
     },
   },

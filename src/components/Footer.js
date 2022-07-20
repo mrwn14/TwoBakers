@@ -2,8 +2,9 @@ import React, {useState} from "react";
 import bread from "../assets/bread.png"
 import {useNavigate} from 'react-router-dom'
 
-function Footer() {
+function Footer(props) {
   const navigate = useNavigate();
+  const {language} = props;
   return (
     <footer class="p-4 bg-gray-100 sm:p-6 dark:bg-gray-800">
       <div class="md:flex md:justify-between">
@@ -22,24 +23,24 @@ function Footer() {
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Resources
+               {language ? "Ressources" : "Resources"}
             </h2>
             <ul class="text-gray-600 dark:text-gray-400">
               <li class="mb-4">
                 <a href="https://www.pinterest.ca/lovefromtheoven/baking-recipes-to-try/" class="hover:underline">
-                  Baking Ideas
+                {language ? "Idées de pâtisserie" : "Baking Ideas"}
                 </a>
               </li>
               <li>
                 <a onClick={() => navigate("/TwoBakers/About/#top")} class="hover:underline cursor-pointer">
-                  About
+                {language ? "A Propos" : "About"}
                 </a>
               </li>
             </ul>
           </div>
           <div>
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Follow us
+            {language ? "Suivez-nous" : "Follow Us"}
             </h2>
             <ul class="text-gray-600 dark:text-gray-400">
               <li class="mb-4">
@@ -64,12 +65,12 @@ function Footer() {
             <ul class="text-gray-600 dark:text-gray-400">
               <li class="mb-4">
                 <a href="https://www.privacypolicies.com/blog/privacy-policy-template/" class="hover:underline">
-                  Privacy Policy
+                {language ? "Politique de confidentialité" : "Privacy Policy"}
                 </a>
               </li>
               <li>
                 <a href="https://termly.io/resources/templates/terms-and-conditions-template/#:~:text=A%20terms%20and%20conditions%20agreement,your%20website%20and%20its%20users." class="hover:underline">
-                  Terms and conditions
+                {language ? "conditions générales" : "Terms and Conditions"}
                 </a>
               </li>
             </ul>
@@ -83,7 +84,8 @@ function Footer() {
           <a href="" class="hover:underline">
             Two Bakers
           </a>
-          . All Rights Reserved.
+          {language ? ". Tous Droits Réservés" : ". All Rights Reserved."}
+          
         </span>
       </div>
     </footer>

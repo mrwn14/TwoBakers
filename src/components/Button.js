@@ -7,6 +7,7 @@ function Button({button, filter}) {
                 button.map((cat, i)=> {
                     return <button key={i} type="button" onClick={()=> filter(cat)} className="w-full mb-5 flex-1 p-2 bg-indigo-500 border-none text-white rounded-md mr-10 last:mr-0 hover:bg-btnHover">{cat}</button>
                 })
+               
             }
         </div>
     )

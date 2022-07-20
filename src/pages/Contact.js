@@ -3,8 +3,9 @@ import {useNavigate, Link} from 'react-router-dom'
 import Chatbot from '../components/Chatbot'
 
 
-function Contact() {
+function Contact(props) {
   const navigate = useNavigate();
+  const {language} = props;
   return (
     <div>
       <Chatbot />
@@ -12,7 +13,8 @@ function Contact() {
         <div className="container px-5 py-12 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-              Give us your feedback!
+              {language ? "Donnez-nous votre avis!" : "Give us your feedback!"}
+              
             </h1>
           </div>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -20,7 +22,7 @@ function Contact() {
               <div className="p-2 w-1/2">
                 <div className="relative">
                   <label for="name" className="leading-7 text-sm text-gray-600">
-                    Name
+                  {language ? "Nom" : "Name"}
                   </label>
                   <input
                     type="text"
@@ -36,7 +38,7 @@ function Contact() {
                     for="email"
                     className="leading-7 text-sm text-gray-600"
                   >
-                    Phone Number
+                    {language ? "Numéro de Téléphone" : "Phone Number"}
                   </label>
                   <input
                     type="tel"
@@ -46,18 +48,19 @@ function Contact() {
                   />
                 </div>
               </div>
+              
               <div className="p-2 w-1/2">
                 <div className="relative">
                   <label
                     for="email"
                     className="leading-7 text-sm text-gray-600"
                   >
-                    Shipping Address
+                    {language ? "Adresse Courriel" : "Email Address"}
                   </label>
                   <input
-                    type="text"
-                    id="shipping"
-                    name="shipping"
+                    type="email"
+                    id="email"
+                    name="email"
                     className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
@@ -68,12 +71,12 @@ function Contact() {
                     for="email"
                     className="leading-7 text-sm text-gray-600"
                   >
-                    Email Adress
+                    {language ? "Experience en Pâtisserie" : "Expertise in baking"}
                   </label>
                   <input
-                    type="email"
-                    id="email"
-                    name="email"
+                    type="text"
+                    id="shipping"
+                    name="shipping"
                     className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
@@ -106,7 +109,7 @@ function Contact() {
                             type="submit"
                             className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                         >
-                            Submit
+                            {language ? "Soumettre" : "Submit"}
                         </button>
                     </Link>
               </div>

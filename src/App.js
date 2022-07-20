@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Navbar from "./components/Navbar"
 import Home from "./pages/home"
@@ -8,16 +8,17 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 
 function App() {
+  const [language, setLanguage] = useState(false);
   return (
     <Router>
-      <Navbar />
+      <Navbar language = {language} setLanguage = {setLanguage} />
       <Routes>
-        <Route path="/TwoBakers/" element={<Home />} />
-        <Route path="/TwoBakers/Recipes" element={<Recipes />} />
-        <Route path="/TwoBakers/About" element={<About />} />
-        <Route path="/TwoBakers/Contact" element={<Contact />} />
+        <Route path="/TwoBakers/" element={<Home language = {language}/>} />
+        <Route path="/TwoBakers/Recipes" element={<Recipes language = {language}/>} />
+        <Route path="/TwoBakers/About" element={<About language = {language}/>} />
+        <Route path="/TwoBakers/Contact" element={<Contact language = {language}/>} />
       </Routes>
-      <Footer />
+      <Footer language = {language}/>
     </Router>
   )
 }

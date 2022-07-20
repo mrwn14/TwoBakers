@@ -2,9 +2,11 @@ import React, {useState} from 'react'
 import bread from "../assets/bread.png"
 import {useNavigate} from 'react-router-dom'
 
-function Navbar() {
+function Navbar(props) {
     const [expand, setExpand] = useState(false); 
     const navigate = useNavigate();
+    const {language, setLanguage} = props;
+
 
     return (
         // <nav className="w-screen flex flex-wrap items-center justify-between px-2 py-3 bg-navPrimary fixed z-50">
@@ -50,6 +52,17 @@ function Navbar() {
                                 <span className="ml-2">CONTACT</span>
                             </a>
                         </li>
+
+                        <li className="nav-item">
+                            <a onClick={() => setLanguage(!language)} className="px-3 py-2 flex items-center text-lg text-black hover:opacity-50 cursor-pointer">
+                                {
+                                    language ?  <span className="ml-2"> EN | <b>FR</b></span> 
+                                    : <span className="ml-2"> <b>EN</b> | FR</span> 
+                                }
+                                
+                            </a>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
