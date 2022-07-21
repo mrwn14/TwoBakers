@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TwoBakers/static/css/main.180a3f0f.css",
-    "main.js": "/TwoBakers/static/js/main.920476e8.js",
+    "main.css": "/TwoBakers/static/css/main.8e04e07f.css",
+    "main.js": "/TwoBakers/static/js/main.6d9af2e0.js",
     "static/media/thatme.png": "/TwoBakers/static/media/thatme.e432d13816043ea71522.png",
     "static/media/image2.jpg": "/TwoBakers/static/media/image2.bdf2ea7b82a2bc8859ce.jpg",
     "static/media/chocolate.jpg": "/TwoBakers/static/media/chocolate.1154055ebd31fa8ae92b.jpg",
@@ -12,11 +12,11 @@
     "static/media/buns.jpg": "/TwoBakers/static/media/buns.71254d19a68ac681c95a.jpg",
     "static/media/cheesecake.jpg": "/TwoBakers/static/media/cheesecake.6a861c6e5e8a8e77ed91.jpg",
     "index.html": "/TwoBakers/index.html",
-    "main.180a3f0f.css.map": "/TwoBakers/static/css/main.180a3f0f.css.map",
-    "main.920476e8.js.map": "/TwoBakers/static/js/main.920476e8.js.map"
+    "main.8e04e07f.css.map": "/TwoBakers/static/css/main.8e04e07f.css.map",
+    "main.6d9af2e0.js.map": "/TwoBakers/static/js/main.6d9af2e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.180a3f0f.css",
-    "static/js/main.920476e8.js"
+    "static/css/main.8e04e07f.css",
+    "static/js/main.6d9af2e0.js"
   ]
 }
