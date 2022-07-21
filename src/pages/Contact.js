@@ -17,12 +17,26 @@ function Contact(props) {
     setPopup((popup) => !popup);
   };
 
+  const hasNumber = (myString) => {
+    return /\d/.test(myString);
+  }
+
+  const validateEmail = (email) => {
+      var re = /\S+@\S+\.\S+/;
+      return re.test(email);
+  }
+
+  const isNumber = (number) => {
+    var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
+    return re.test(number);
+  }
+
   const Submit = () => {
-    const message1 = "Name value";
+    const message1 = "name value";
     const message2 = "phone Number";
-    const message3 = "Email address";
-    const message4 = "Expertise in baking value";
-    const message5 = "Message value";
+    const message3 = "email address";
+    const message4 = "expertise in baking value";
+    const message5 = "message value";
     var count = 0;
     var lastMessage = "";
     if (nameRef.current.value === "") {
@@ -47,7 +61,18 @@ function Contact(props) {
     }
 
     if (lastMessage === "") {
-      handlePopup();
+      if(hasNumber(nameRef.current.value)) {
+        alert("Name is not valid. Name should not include a number")
+      }
+      else if(!validateEmail(emailRef.current.value)) {
+        alert("Email is not valid. Enter a valid email")
+      }
+      else if(!isNumber(phoneRef.current.value)) {
+        alert("phone number is not valid. enter a phone number")
+      }
+      else{
+        handlePopup();
+      }
     } else {
       if (count == 1) {
         lastMessage += " is empty";
@@ -57,7 +82,7 @@ function Contact(props) {
       if (lastMessage.slice(0, 5) === " and ") {
         lastMessage = lastMessage.slice(5);
       }
-
+      lastMessage = lastMessage.charAt(0).toUpperCase() + lastMessage.slice(1);
       alert(lastMessage);
     }
   };
