@@ -65,7 +65,7 @@ function Contact(props) {
 
   return (
     <div>
-      <Chatbot />
+      <Chatbot language={language} />
       {popup ? <Popup name={nameRef.current.value} email={emailRef.current.value} language = {language}/> : <div></div>}
 
       <section className="text-gray-700 body-font relative">

@@ -36,12 +36,10 @@
     color: #363062;
     font-weight: 500;
   }
-  .wrapper .content .main{
-    margin: 30px 0 0;
-  }
+  
   .wrapper .content .main .main_content .messages{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
   }
   .wrapper .content .main .main_content .messages .bot-message{
@@ -52,7 +50,6 @@
     background: #EDECED;
     font-size: 1.1em;
     border-radius: 10px;
-    margin: 0 10px 0;
   }
   .wrapper .content .main .main_content .messages .human-message{
     width: 100%;
@@ -86,7 +83,7 @@
   }
 .wrapper .content .bottom .btm .input {
     flex: 4;
-    margin: auto;
+    margin : 0 10px;
 }
 
   .wrapper .content .bottom .btm .input input{

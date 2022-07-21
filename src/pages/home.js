@@ -10,7 +10,7 @@ function Home(props) {
 
   return (
     <div className='text-black h-screen relative overflow-hidden'>
-        <Chatbot />
+        <Chatbot language = {language} />
         <div className='bg-cover h-screen overflow-hidden'>
             <img className='bg-cover max-w-none md:w-screen h-screen' src={bigBg} />
         </div> 

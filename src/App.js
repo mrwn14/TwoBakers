@@ -6,7 +6,6 @@ import Recipes from "./pages/Recipes"
 import Footer from "./components/Footer"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
-import Recipe from "./pages/Recipe"
 
 function App() {
   const [language, setLanguage] = useState(false);
@@ -18,7 +17,6 @@ function App() {
         <Route path="/TwoBakers/Recipes" element={<Recipes language = {language}/>} />
         <Route path="/TwoBakers/About" element={<About language = {language}/>} />
         <Route path="/TwoBakers/Contact" element={<Contact language = {language}/>} />
-        <Route path="/TwoBakers/Recipe" element={<Recipe language = {language}/>} />
       </Routes>
       <Footer language = {language}/>
     </Router>

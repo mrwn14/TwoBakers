@@ -7,7 +7,7 @@ function About(props) {
   const { language } = props;
   return (
     <div id="top" className="relative grid h-full md:flex">
-      <Chatbot />
+      <Chatbot language={language} />
       {/* right side of the website */}
       <div className="grid-cols-1 mx-auto md:flex-[3_3_0%]">
         <img
