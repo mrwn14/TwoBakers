@@ -1,8 +1,7 @@
-import React , {useState} from 'react'
+import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import Chatbot from "../components/Chatbot";
-import Popup from "../components/Popup"
-
+import Popup from "../components/Popup";
 
 function Contact(props) {
   const navigate = useNavigate();
@@ -14,8 +13,8 @@ function Contact(props) {
   const messageRef = React.useRef();
   const [popup, setPopup] = useState(false);
 
-  const handlePopup = event => {
-    setPopup(popup => !popup)
+  const handlePopup = (event) => {
+    setPopup((popup) => !popup);
   };
 
   const Submit = () => {
@@ -66,7 +65,15 @@ function Contact(props) {
   return (
     <div>
       <Chatbot language={language} />
-      {popup ? <Popup name={nameRef.current.value} email={emailRef.current.value} language = {language}/> : <div></div>}
+      {popup ? (
+        <Popup
+          name={nameRef.current.value}
+          email={emailRef.current.value}
+          language={language}
+        />
+      ) : (
+        <div></div>
+      )}
 
       <section className="text-gray-700 body-font relative">
         <div className="container px-5 py-12 mx-auto">
@@ -145,44 +152,41 @@ function Contact(props) {
                   />
                 </div>
               </div>
-              
+            </div>
+            <div className="p-2 w-full">
+              <div className="relative">
+                <label
+                  for="message"
+                  className="leading-7 text-sm text-gray-600"
+                >
+                  Message
+                </label>
+                <textarea
+                  ref={messageRef}
+                  id="message"
+                  name="message"
+                  className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                ></textarea>
               </div>
-              <div className="p-2 w-full">
-                <div className="relative">
-                  <label
-                    for="message"
-                    className="leading-7 text-sm text-gray-600"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    ref={messageRef}
-                    id="message"
-                    name="message"
-                    className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                  ></textarea>
-                </div>
-              </div>
-              <div className="p-2 w-full">
-                {/* <Link
+            </div>
+            <div className="p-2 w-full">
+              {/* <Link
                 to={"/TwoBakers/"}
                 >
                   <button onClick={alert("Thank you for your feedback!")} className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
 
                   </button>
                 </Link> */}
-                <div
-                  className="self-end"
-                  onClick={() => {
-                    Submit();
-                  }}
-                >
-                  <button
-                    className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-                  >
-                    {language ? "Soumettre" : "Submit"}
-                  </button>
-                </div>
+              <div
+                className="self-end"
+                onClick={() => {
+                  Submit();
+                }}
+              >
+                <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                  {language ? "Soumettre" : "Submit"}
+                </button>
+              </div>
             </div>
           </div>
         </div>

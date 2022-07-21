@@ -28,7 +28,7 @@ function Recipes(props) {
 
   return (
     <div className="pb-16">
-      <Chatbot language = {language} />
+      <Chatbot language={language} />
       <p className="text-center text-4xl pt-5 pb-5 underline underline-offset-2">
         {language ? "Explorez nos recettes!" : "Explore our recipes!"}
       </p>

@@ -99,22 +99,32 @@ function Chatbot(props) {
     ]; //adding the age-question
     let words12 = new RegExp(recipeAsk);
 
-    let bakeryAsk = ["about the bakery|About the bakery|À propos de la boulangerie|A propos de la boulangerie|a propos de la boulangerie"]; //adding the age-question
+    let bakeryAsk = [
+      "about the bakery|About the bakery|À propos de la boulangerie|A propos de la boulangerie|a propos de la boulangerie",
+    ]; //adding the age-question
     let words13 = new RegExp(bakeryAsk);
 
     let helpAsk = ["help|Help|Aide|aide"];
     let words14 = new RegExp(helpAsk);
 
-    let contactAsk = ["How to contact|how to contact|Comment nous contacter|comment nous contacter"];
+    let contactAsk = [
+      "How to contact|how to contact|Comment nous contacter|comment nous contacter",
+    ];
     let words15 = new RegExp(contactAsk);
 
-    let callAsk = ["I want to call|i want to call|Je veux appeler|je veux appeler"];
+    let callAsk = [
+      "I want to call|i want to call|Je veux appeler|je veux appeler",
+    ];
     let words16 = new RegExp(callAsk);
 
-    let complaintAsk = ["I have a complaint|i have a complaint|J'ai une plainte|j'ai une plainte"];
+    let complaintAsk = [
+      "I have a complaint|i have a complaint|J'ai une plainte|j'ai une plainte",
+    ];
     let words17 = new RegExp(complaintAsk);
 
-    let addAsk = ["I want to add a recipe|i want to add a recipe|Je veux ajouter une recette|je veux ajouter une recette"];
+    let addAsk = [
+      "I want to add a recipe|i want to add a recipe|Je veux ajouter une recette|je veux ajouter une recette",
+    ];
     let words18 = new RegExp(addAsk);
 
     //hello
@@ -199,8 +209,10 @@ function Chatbot(props) {
       botMessage.innerHTML = "Typing...";
       setTimeout(() => {
         language
-          ? (botMessage.innerHTML = "Mon nom est Bot, je suis votre assistant virtuel.")
-          : (botMessage.innerHTML = "My name is Bot, I am your virtual assistant.");
+          ? (botMessage.innerHTML =
+              "Mon nom est Bot, je suis votre assistant virtuel.")
+          : (botMessage.innerHTML =
+              "My name is Bot, I am your virtual assistant.");
 
         document.querySelector("#input").value = "";
       }, 2000);
@@ -387,15 +399,22 @@ function Chatbot(props) {
             <path d="M 25 4 C 12.316406 4 2 12.972656 2 24 C 2 30.1875 5.335938 36.066406 10.949219 39.839844 C 10.816406 40.890625 10.285156 43.441406 8.183594 46.425781 L 7.078125 47.992188 L 9.054688 48 C 14.484375 48 18.15625 44.671875 19.363281 43.394531 C 21.195313 43.796875 23.089844 44 25 44 C 37.683594 44 48 35.027344 48 24 C 48 12.972656 37.683594 4 25 4 Z" />
           </svg>
         ) : (
-          <svg
-            fill="#8510d8"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 50 50"
-            width="50px"
-            height="50px"
-          >
-            <path d="M 25 4 C 12.316406 4 2 12.972656 2 24 C 2 30.1875 5.335938 36.066406 10.949219 39.839844 C 10.816406 40.890625 10.285156 43.441406 8.183594 46.425781 L 7.078125 47.992188 L 9.054688 48 C 14.484375 48 18.15625 44.671875 19.363281 43.394531 C 21.195313 43.796875 23.089844 44 25 44 C 37.683594 44 48 35.027344 48 24 C 48 12.972656 37.683594 4 25 4 Z" />
-          </svg>
+          <div className="flex flex-col justify-end animate-bounce">
+            <div className=" bg-white whitespace-nowrap py-2 px-3 border-solid border-2 border-black rounded-full -translate-x-6 translate-y-5">
+              Come Chat!
+            </div>
+            <div className="ml-auto">
+              <svg
+                fill="#000000"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 50 50"
+                width="50px"
+                height="50px"
+              >
+                <path d="M 25 4 C 12.316406 4 2 12.972656 2 24 C 2 30.1875 5.335938 36.066406 10.949219 39.839844 C 10.816406 40.890625 10.285156 43.441406 8.183594 46.425781 L 7.078125 47.992188 L 9.054688 48 C 14.484375 48 18.15625 44.671875 19.363281 43.394531 C 21.195313 43.796875 23.089844 44 25 44 C 37.683594 44 48 35.027344 48 24 C 48 12.972656 37.683594 4 25 4 Z" />
+              </svg>
+            </div>
+          </div>
         )}
       </button>
     </div>
