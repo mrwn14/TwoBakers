@@ -16,6 +16,7 @@ export default [
         titleFR : 'BRIOCHES',
         categoryFR : 'pains',
         descriptionFR : "Tout le monde a goûté des brioches dans sa vie, mais je vous assure que vous n'avez jamais goûté ces brioches. Après une seule bouchée, vous en redemanderez.",
+        
         link: 'https://www.youtube.com/watch?v=gTGSUYMu6Ns&ab_channel=JoshuaWeissman'
     },
     {
